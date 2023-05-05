@@ -1,6 +1,6 @@
 {
-    "name": "daq_mobile",
-    "short_name": "daq_mobile",
+    "name": "ieee_movieapp",
+    "short_name": "ieee_movieapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

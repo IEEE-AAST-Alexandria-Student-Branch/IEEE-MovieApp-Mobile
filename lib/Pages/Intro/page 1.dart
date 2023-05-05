@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ieee_movieapp/Constants/colors.dart';
 
 class Intro1 extends StatelessWidget {
   const Intro1({Key? key}) : super(key: key);
@@ -6,7 +7,7 @@ class Intro1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(child: Text("hello")),
+      body: Center(child: Text("hello", style: TextStyle(color: txtColor, fontSize: 30),)),
     );
   }
 }

@@ -1,4 +1,4 @@
-package com.example.daq_mobile
+package com.example.ieee_movieapp
 
 import io.flutter.embedding.android.FlutterActivity
 
