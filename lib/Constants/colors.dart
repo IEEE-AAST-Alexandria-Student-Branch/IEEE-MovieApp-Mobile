@@ -8,3 +8,5 @@ const txtColor = Color(0xFFE7E7E7);
 const fieldColor = Color(0xFF0E1014);
 const higlightedFieldColor = Color(0xFF26181E);
 const fieldTxtColor = Color.fromARGB(120, 231, 231, 231);
+
+const borderColor = Color(0xFF23272E);
