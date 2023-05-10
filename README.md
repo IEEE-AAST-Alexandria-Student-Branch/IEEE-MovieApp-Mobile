@@ -12,6 +12,12 @@ It is used to show and recommend the latest movies and shows for the user using 
 
 ## Changelog
 
+### Version 0.0.1
+- intro page created
+- Added border color in constants
+- Added images required for the intro page
+- Renamed intro pages files to be more descriptive
+
 ### Version 0.0.0
 - Color palette created
 - Font family added
