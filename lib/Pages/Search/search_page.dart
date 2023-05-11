@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ieee_movieapp/Constants/colors.dart';
 import 'package:ieee_movieapp/Pages/Search/searchWidgets/search_filter_sheet.dart';
-import 'package:ieee_movieapp/Pages/Search/search_page_data.dart';
-
-import '../../Constants/fonts.dart';
 
 class Search extends StatefulWidget {
   const Search({super.key});
