@@ -15,6 +15,7 @@ It is used to show and recommend the latest movies and shows for the user using 
 ### Version 0.0.2
 - Interests page added
 - Search page filters added
+- onboard pages added
 
 ### Version 0.0.1
 - intro page created
