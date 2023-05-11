@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ieee_movieapp/Constants/colors.dart';
 import 'package:ieee_movieapp/Constants/fonts.dart';
+import 'package:ieee_movieapp/Pages/Intrests/interests_page.dart';
 import 'package:ieee_movieapp/Pages/Intro/IntroWidgets/cont_buttons.dart';
 
 class Intro extends StatelessWidget {
@@ -15,10 +16,18 @@ class Intro extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: const [
+                BackButton(
+                  color: txtColor,
+                ),
+              ],
+            ),
             // Art on top
             SizedBox(
-              width: 250,
-              height: 250,
+              width: 220,
+              height: 220,
               child: Image.asset(
                 "images/letsInLady.png",
                 fit: BoxFit.cover,
@@ -71,13 +80,16 @@ class Intro extends StatelessWidget {
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(25)),
                       )),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const Interests()));
+                  },
                   child: const Text("Sign in with password",
                       style: TextStyle(fontFamily: medium))),
             ),
             // Signup
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20),
+              padding: const EdgeInsets.only(top: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
