@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Constants/colors.dart';
-import 'Pages/Intro/page 1.dart';
+import 'Pages/Profile/Profile Page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: primaryColor,
       ),
-      home: const Intro1(),
+      home: const Profile(),
     );
   }
 }
