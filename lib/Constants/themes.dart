@@ -27,3 +27,10 @@ var textFieldTheme = InputDecorationTheme(
       borderSide: const BorderSide(width: 3, color: secondaryColor),
       borderRadius: BorderRadius.circular(15),
     ));
+
+var chipButtonTheme = const ChipThemeData(
+  side: BorderSide(width: 2, color: secondaryColor),
+  labelStyle: TextStyle(fontFamily: small, fontSize: 15),
+  backgroundColor: primaryColor,
+  selectedColor: secondaryColor,
+);
