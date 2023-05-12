@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../../Constants/colors.dart';
 import '../../Constants/fonts.dart';
-import '../../Help/Help Center Page.dart';
+import '../Help/Help Center Page.dart';
 import 'Profile Data.dart';
 
 class Profile extends StatefulWidget {
@@ -15,62 +14,62 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
     double screenHigh = MediaQuery.of(context).size.height;
-    double iconsize = screenWidth / 12;
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Row(
             children: [
               Container(
+                margin: const EdgeInsets.only(left: 10),
                 child: Image.asset(
                   "images/red_ieee.png",
                   width: 40,
                 ),
-                margin: EdgeInsets.only(left: 10),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
-              Text(
+              const Text(
                 "Profile",
                 style:
                     TextStyle(color: txtColor, fontFamily: small, fontSize: 20),
               ),
             ],
           ),
+          const Spacer(),
           Center(
             child: Stack(
               alignment: AlignmentDirectional.bottomEnd,
               children: [
                 Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: Colors.white),
                   child: Image.asset(
                     "images/profile.png",
                     width: 100,
                   ),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: Colors.white),
                 ),
                 Container(
-                  child: Icon(Icons.edit),
-                  decoration: BoxDecoration(color: secondaryColor),
+                  decoration: const BoxDecoration(color: secondaryColor),
+                  child: const Icon(Icons.edit),
                 ),
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           Text(
             profilename,
-            style: TextStyle(color: txtColor, fontFamily: small, fontSize: 20),
+            style: const TextStyle(
+                color: txtColor, fontFamily: small, fontSize: 20),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(
@@ -80,57 +79,14 @@ class _ProfileState extends State<Profile> {
                 fontFamily: small,
                 fontSize: 15),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
-              border: Border.all(color: secondaryColor, width: 3),
-            ),
-            child: Container(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-              child: Row(children: [
-                Image.asset(
-                  "images/crown.png",
-                  color: secondaryColor,
-                  width: 70,
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Join Premium!",
-                      style: TextStyle(
-                          color: secondaryColor,
-                          fontFamily: small,
-                          fontSize: 20),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      "Enjoy watching full HD movies,\nwithout restrictions and without ads",
-                      style: TextStyle(
-                          color: txtColor.withOpacity(0.7),
-                          fontFamily: small,
-                          fontSize: 10),
-                    ),
-                  ],
-                ),
-                Spacer(),
-                Icon(Icons.arrow_forward_ios, color: secondaryColor),
-              ]),
-            ),
-          ),
+          const Spacer(),
           SizedBox(
             height: screenHigh / 2,
             child: ListView.builder(
-                itemCount: 7,
+                itemCount: dataIcons.length,
                 scrollDirection: Axis.vertical,
                 itemBuilder: (context, index) {
                   return InkWell(
@@ -138,15 +94,16 @@ class _ProfileState extends State<Profile> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Help(),
+                            builder: (context) => const Help(),
                           ));
                     },
                     child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 20, vertical: 5),
                       child: Row(
                         children: [
                           dataIcons[index],
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Text(
@@ -156,7 +113,7 @@ class _ProfileState extends State<Profile> {
                                 fontFamily: small,
                                 fontSize: 20),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           dataText[index] == "Dark Mode"
                               ? Switch(
                                   value: switchvalue,

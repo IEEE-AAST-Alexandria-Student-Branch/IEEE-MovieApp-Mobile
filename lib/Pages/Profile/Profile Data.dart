@@ -15,37 +15,37 @@ List<String> dataText = [
 ];
 
 List<Widget> dataIcons = [
-  Icon(
+  const Icon(
     Icons.person_outline,
     color: Colors.grey,
     size: 40,
   ),
-  Icon(
+  const Icon(
     Icons.notifications_none,
     color: Colors.grey,
     size: 40,
   ),
-  Icon(
+  const Icon(
     Icons.file_download_outlined,
     color: Colors.grey,
     size: 40,
   ),
-  Icon(
+  const Icon(
     Icons.shield,
     color: Colors.grey,
     size: 40,
   ),
-  Icon(
+  const Icon(
     Icons.language,
     color: Colors.grey,
     size: 40,
   ),
-  Icon(
+  const Icon(
     Icons.remove_red_eye_outlined,
     color: Colors.grey,
     size: 40,
   ),
-  Icon(
+  const Icon(
     Icons.help_center_outlined,
     color: Colors.grey,
     size: 40,
