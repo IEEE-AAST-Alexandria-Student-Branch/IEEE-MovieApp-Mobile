@@ -4,7 +4,6 @@ import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:flutter/services.dart';
 import 'dropdown.dart';
 
-final items = ['Male','Female',];
 
 class Fillprof extends StatelessWidget {
   const Fillprof({Key? key}) : super(key: key);
@@ -29,33 +28,7 @@ class Fillprof extends StatelessWidget {
       body:
       Container(
         padding: const EdgeInsets.only(left: 15,top: 20,right: 15),
-        // child:GestureDetector(
-        //   onTap:(){
-        //     FocusScope.of(context).unfocus();
-        //   },
-        //   child: ListView(
-        //     children: [
-        //       Center(
-        //         child: Stack(
-        //           children: [
-        //             Container(
-        //               width: 130,
-        //               height: 130,
-        //               decoration: BoxDecoration(
-        //                 border: Border.all(width: 4),
-        //                 shape: BoxShape.circle,
-        //                 image: const DecorationImage(
-        //                   fit: BoxFit.cover,
-        //                   image: NetworkImage('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png')
-        //                 )
-        //               ),
-        //             ),
-        //           ],
-        //         ),
-        //       )
-        //     ],
-        //   ),
-        // )
+/////////////////Profimg dart file///////////
         child: SingleChildScrollView(
           child: Column(
            children: <Widget>[
@@ -90,6 +63,7 @@ class Fillprof extends StatelessWidget {
                  contentPadding: EdgeInsets.only(bottom: 15,left: 0),
                ),
              ),
+///////////////////////dropdown dart file////////////////
              const SizedBox(height: 22,),
              Row(
                mainAxisAlignment: MainAxisAlignment.center,
@@ -121,6 +95,13 @@ class Fillprof extends StatelessWidget {
         ),
       ),);
 }
+
+
+
+
+
+
+
 Widget fullnamefield() {
   return TextFormField(
     decoration: const InputDecoration(

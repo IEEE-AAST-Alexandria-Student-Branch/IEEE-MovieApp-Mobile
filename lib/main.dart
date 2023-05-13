@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ieee_movieapp/Pages/profile/dropdown.dart';
 import 'package:ieee_movieapp/Pages/profile/fill.dart';
+import 'package:ieee_movieapp/Pages/profile/profimg.dart';
 
 import 'Constants/colors.dart';
 import 'Pages/Intro/page 1.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: primaryColor,
       ),
-      home: const Fillprof(),
+      home: const Profimg(),
     );
   }
 }
