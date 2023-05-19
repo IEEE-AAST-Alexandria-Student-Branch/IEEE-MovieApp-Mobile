@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:ieee_movieapp/Pages/Help/help_center_page.dart';
 import 'package:ieee_movieapp/Pages/Intro/intro_page.dart';
 import 'package:ieee_movieapp/Pages/Intro/on_board_page.dart';
