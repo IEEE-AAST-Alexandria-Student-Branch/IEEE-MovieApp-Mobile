@@ -41,6 +41,7 @@ dependencies:
   firebase_auth: ^4.5.0
   cloud_firestore: ^4.6.0
   firebase_core: ^2.11.0
+  smooth_page_indicator: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -90,6 +91,6 @@ flutter:
     - family: GothamPro
       fonts:
         - asset: fonts/GothamPro-Medium.ttf
-  
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

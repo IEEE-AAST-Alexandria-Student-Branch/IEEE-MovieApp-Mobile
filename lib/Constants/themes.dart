@@ -27,3 +27,19 @@ var textFieldTheme = InputDecorationTheme(
       borderSide: const BorderSide(width: 3, color: secondaryColor),
       borderRadius: BorderRadius.circular(15),
     ));
+
+var chipButtonTheme = const ChipThemeData(
+  side: BorderSide(width: 2, color: secondaryColor),
+  labelStyle: TextStyle(fontFamily: small, fontSize: 15),
+  backgroundColor: primaryColor,
+  selectedColor: secondaryColor,
+);
+
+var expantionTileTheme = const ExpansionTileThemeData(
+    tilePadding: EdgeInsets.symmetric(horizontal: 15),
+    childrenPadding: EdgeInsets.only(left: 15, right: 15, bottom: 15),
+    collapsedTextColor: txtColor,
+    backgroundColor: fieldColor,
+    textColor: txtColor,
+    collapsedIconColor: secondaryColor,
+    iconColor: secondaryColor);
