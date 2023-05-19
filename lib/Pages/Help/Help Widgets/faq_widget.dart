@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../Constants/colors.dart';
 import '../../../Constants/fonts.dart';
-import '../Help Data.dart';
+import '../help_data.dart';
 
 class FAQ extends StatefulWidget {
   const FAQ({Key? key}) : super(key: key);
@@ -16,6 +16,7 @@ class _FAQState extends State<FAQ> {
     double screenWidth = MediaQuery.of(context).size.width;
     return Column(
       children: [
+        // Horizontal questionCatagoryList chip selector
         SizedBox(
           height: 60,
           child: ListView.separated(
@@ -39,7 +40,7 @@ class _FAQState extends State<FAQ> {
                       ),
                       child: Center(
                         child: Text(
-                          data1[index],
+                          questionCatagoryList[index],
                           style: TextStyle(
                             color: current == index
                                 ? Colors.white
@@ -54,16 +55,16 @@ class _FAQState extends State<FAQ> {
               separatorBuilder: (context, index) => const SizedBox(
                     width: 10,
                   ),
-              itemCount: data1.length),
+              itemCount: questionCatagoryList.length),
         ),
         const SizedBox(
           height: 15,
         ),
+        // Search Bar
         Container(
-          margin: const EdgeInsets.symmetric(horizontal: 20),
           padding: const EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
-            color: Colors.grey[900],
+            color: fieldColor,
             borderRadius: BorderRadius.circular(10),
           ),
           width: screenWidth,
@@ -73,7 +74,7 @@ class _FAQState extends State<FAQ> {
                 onTap: () {},
                 child: const Icon(
                   Icons.search,
-                  color: Colors.grey,
+                  color: fieldTxtColor,
                 ),
               ),
               const SizedBox(
@@ -81,15 +82,17 @@ class _FAQState extends State<FAQ> {
               ),
               const Expanded(
                 child: TextField(
-                  showCursor: false,
-                  cursorColor: Colors.grey,
+                  showCursor: true,
+                  cursorColor: secondaryColor,
                   decoration: InputDecoration(
+                    fillColor: fieldColor,
+                    enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: fieldColor)),
                     focusedBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Colors.grey),
+                      borderSide: BorderSide(color: primaryColor),
                     ),
-                    focusColor: Colors.grey,
                     hintText: "Search",
-                    hintStyle: TextStyle(color: Colors.grey),
+                    hintStyle: TextStyle(color: fieldTxtColor),
                   ),
                   style: TextStyle(color: Colors.white),
                 ),
@@ -98,7 +101,7 @@ class _FAQState extends State<FAQ> {
                 onTap: () {},
                 child: const Icon(
                   Icons.filter_alt,
-                  color: Colors.grey,
+                  color: secondaryColor,
                 ),
               ),
             ],
@@ -107,67 +110,34 @@ class _FAQState extends State<FAQ> {
         const SizedBox(
           height: 20,
         ),
-        SizedBox(
-          height: 500,
+        // Expantion tile blocks builder
+        Expanded(
           child: ListView.separated(
-              itemBuilder: (context, index) => Container(
-                    height: 60,
-                    margin: const EdgeInsets.symmetric(horizontal: 20),
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    decoration: BoxDecoration(
-                        color: Colors.grey[900],
-                        borderRadius: BorderRadius.circular(15)),
-                    child: Row(
-                      children: [
-                        Text(
-                          data3[index],
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 500,
-                          child: ExpansionPanelList(
-                            children: [
-                              ExpansionPanel(
-                                canTapOnHeader: true,
-                                headerBuilder: (context, isExpanded) {
-                                  return const Text("fggfgSDFgdfgdsfgadfgsfg");
-                                },
-                                body: const Text("fgfd"),
-                                isExpanded: isOpen[0],
-                              ),
-                              ExpansionPanel(
-                                canTapOnHeader: true,
-                                headerBuilder: (context, isExpanded) {
-                                  return const Text("fggfgSDFgdfgdsfgadfgsfg");
-                                },
-                                body: const Text("fdgd"),
-                                isExpanded: isOpen[1],
-                              ),
-                              ExpansionPanel(
-                                canTapOnHeader: true,
-                                headerBuilder: (context, isExpanded) {
-                                  return const Text("fggfgSDFgdfgdsfgadfgsfg");
-                                },
-                                body: const Text("fdgd"),
-                                isExpanded: isOpen[2],
-                              ),
-                            ],
-                            expansionCallback: (i, isOpened) => setState(() {
-                              isOpen[i] = isOpened;
-                            }),
-                          ),
-                        ),
-                      ],
-                    ),
+              itemCount: questionList.length,
+              itemBuilder: (context, index) {
+                return ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(15)),
+                  child: ExpansionTile(
+                    title: Text(questionList[index]),
+                    children: const [
+                      SizedBox(
+                          width: double.infinity,
+                          child: Divider(
+                            thickness: 1,
+                            color: borderColor,
+                          )),
+                      Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                        style: TextStyle(color: txtColor),
+                      )
+                    ],
                   ),
+                );
+              },
               separatorBuilder: (context, index) => const SizedBox(
-                    height: 5,
-                  ),
-              itemCount: data3.length),
-        ),
+                    height: 20,
+                  )),
+        )
       ],
     );
   }

@@ -3,28 +3,26 @@ import 'package:ieee_movieapp/Constants/colors.dart';
 
 int current = 0;
 
-List<String> data1 = [
+List<String> questionCatagoryList = [
   "General",
   "Account",
   "Service",
   "Video",
 ];
 
-List<String> data2 = [
-  "Customer Service",
-  "WhatsApp",
-  "Website",
-];
-
-List<String> data3 = [
+List<String> questionList = [
   "What is Mova?",
   "How to remove wishlist?",
-  "How can I download movies?",
+  "How do i subscribe to premium?",
+  "How can i download movies?",
+  "How to unsubscribe from premium"
 ];
 
 List<bool> isOpen = [false, false, false];
 
-List<Icon> icons = [
+List<String> contactList = ["Customer Service", "WhatsApp", "Website", "Phone"];
+
+List<Icon> contactIconList = [
   const Icon(
     Icons.headphones,
     color: secondaryColor,
@@ -35,6 +33,10 @@ List<Icon> icons = [
   ),
   const Icon(
     Icons.web,
+    color: secondaryColor,
+  ),
+  const Icon(
+    Icons.phone,
     color: secondaryColor,
   ),
 ];

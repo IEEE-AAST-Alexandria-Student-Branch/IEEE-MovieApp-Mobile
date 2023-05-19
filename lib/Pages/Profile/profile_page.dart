@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../Constants/colors.dart';
 import '../../Constants/fonts.dart';
-import '../Help/Help Center Page.dart';
-import 'Profile Data.dart';
+import 'profile_data.dart';
 
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
@@ -21,6 +20,7 @@ class _ProfileState extends State<Profile> {
           const SizedBox(
             height: 50,
           ),
+          // Icon and page name at the top
           Row(
             children: [
               Container(
@@ -41,6 +41,7 @@ class _ProfileState extends State<Profile> {
             ],
           ),
           const Spacer(),
+          // Profile picture and edit button
           Center(
             child: Stack(
               alignment: AlignmentDirectional.bottomEnd,
@@ -64,6 +65,7 @@ class _ProfileState extends State<Profile> {
           const SizedBox(
             height: 15,
           ),
+          // User info
           Text(
             profilename,
             style: const TextStyle(
@@ -83,6 +85,7 @@ class _ProfileState extends State<Profile> {
             height: 15,
           ),
           const Spacer(),
+          // Button list
           SizedBox(
             height: screenHigh / 2,
             child: ListView.builder(
@@ -91,11 +94,8 @@ class _ProfileState extends State<Profile> {
                 itemBuilder: (context, index) {
                   return InkWell(
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const Help(),
-                          ));
+                      // TODO: fix buttons
+                      // button destination
                     },
                     child: Container(
                       margin: const EdgeInsets.symmetric(
