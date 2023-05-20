@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ieee_movieapp/Constants/colors.dart';
 import '../Profile/profile_page.dart';
-import 'Help Widgets/contact_us_widget.dart';
-import 'Help Widgets/faq_widget.dart';
+import 'HelpWidgets/contact_us_widget.dart';
+import 'HelpWidgets/faq_widget.dart';
 
 class Help extends StatefulWidget {
   const Help({Key? key}) : super(key: key);

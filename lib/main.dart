@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:ieee_movieapp/Pages/Help/help_center_page.dart';
-import 'package:ieee_movieapp/Pages/Intro/intro_page.dart';
 import 'package:ieee_movieapp/Pages/Intro/on_board_page.dart';
+import 'package:ieee_movieapp/Pages/loginSignup/sign%20up.dart';
 import 'Constants/colors.dart';
 import 'Constants/themes.dart';
 
@@ -24,7 +22,7 @@ class MyApp extends StatelessWidget {
           chipTheme: chipButtonTheme,
           scaffoldBackgroundColor: primaryColor,
           inputDecorationTheme: textFieldTheme),
-      home: const Intro(),
+      home: const OnBoardingScreen(),
     );
   }
 }

@@ -3,6 +3,9 @@ import 'package:ieee_movieapp/Constants/colors.dart';
 import 'package:ieee_movieapp/Constants/fonts.dart';
 import 'package:ieee_movieapp/Pages/Intrests/interests_page.dart';
 import 'package:ieee_movieapp/Pages/Intro/IntroWidgets/cont_buttons.dart';
+import 'package:ieee_movieapp/Pages/loginSignup/login.dart';
+
+import '../loginSignup/sign up.dart';
 
 class Intro extends StatelessWidget {
   const Intro({Key? key}) : super(key: key);
@@ -81,8 +84,8 @@ class Intro extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(25)),
                       )),
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const Interests()));
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => const Login()));
                   },
                   child: const Text("Sign in with password",
                       style: TextStyle(fontFamily: medium))),
@@ -99,7 +102,10 @@ class Intro extends StatelessWidget {
                         color: txtColor, fontFamily: small, fontSize: 12),
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const SignUp()));
+                    },
                     child: const Text(
                       "Sign up",
                       style: TextStyle(

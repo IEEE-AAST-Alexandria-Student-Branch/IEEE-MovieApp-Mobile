@@ -42,9 +42,7 @@ class _FAQState extends State<FAQ> {
                         child: Text(
                           questionCatagoryList[index],
                           style: TextStyle(
-                            color: current == index
-                                ? Colors.white
-                                : secondaryColor,
+                            color: current == index ? txtColor : secondaryColor,
                             fontSize: 17,
                             fontFamily: small,
                           ),
@@ -94,7 +92,7 @@ class _FAQState extends State<FAQ> {
                     hintText: "Search",
                     hintStyle: TextStyle(color: fieldTxtColor),
                   ),
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: txtColor),
                 ),
               ),
               InkWell(
