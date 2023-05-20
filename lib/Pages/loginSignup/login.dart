@@ -4,7 +4,7 @@ import 'package:ieee_movieapp/Constants/fonts.dart';
 import 'package:ieee_movieapp/Pages/loginSignup/LoginWidgets/email_pass.dart';
 import 'package:ieee_movieapp/Pages/loginSignup/LoginWidgets/login_icons.dart';
 import 'package:ieee_movieapp/Pages/loginSignup/dialogue.dart';
-import 'package:ieee_movieapp/Pages/loginSignup/sign%20up.dart';
+import 'package:ieee_movieapp/Pages/loginSignup/sign_up.dart';
 
 bool rememberMe = false;
 

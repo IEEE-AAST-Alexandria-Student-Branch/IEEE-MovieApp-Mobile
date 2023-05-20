@@ -5,7 +5,7 @@ import 'package:ieee_movieapp/Pages/Intrests/interests_page.dart';
 import 'package:ieee_movieapp/Pages/Intro/IntroWidgets/cont_buttons.dart';
 import 'package:ieee_movieapp/Pages/loginSignup/login.dart';
 
-import '../loginSignup/sign up.dart';
+import '../loginSignup/sign_up.dart';
 
 class Intro extends StatelessWidget {
   const Intro({Key? key}) : super(key: key);
