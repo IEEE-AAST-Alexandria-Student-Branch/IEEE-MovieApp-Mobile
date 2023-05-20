@@ -6,6 +6,10 @@ import 'fonts.dart';
 // Themeing for the TextFields
 var textFieldTheme = InputDecorationTheme(
     // Switches the prefix icon color based on focus
+    suffixIconColor: MaterialStateColor.resolveWith((states) =>
+        states.contains(MaterialState.focused)
+            ? secondaryColor
+            : fieldTxtColor),
     prefixIconColor: MaterialStateColor.resolveWith((states) =>
         states.contains(MaterialState.focused)
             ? secondaryColor

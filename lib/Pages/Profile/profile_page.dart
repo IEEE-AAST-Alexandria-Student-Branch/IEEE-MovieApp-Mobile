@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ieee_movieapp/Pages/Profile/ProfileWidgets/profimg.dart';
 import '../../Constants/colors.dart';
 import '../../Constants/fonts.dart';
 import 'profile_data.dart';
@@ -42,26 +43,7 @@ class _ProfileState extends State<Profile> {
           ),
           const Spacer(),
           // Profile picture and edit button
-          Center(
-            child: Stack(
-              alignment: AlignmentDirectional.bottomEnd,
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: Colors.white),
-                  child: Image.asset(
-                    "images/profile.png",
-                    width: 100,
-                  ),
-                ),
-                Container(
-                  decoration: const BoxDecoration(color: secondaryColor),
-                  child: const Icon(Icons.edit),
-                ),
-              ],
-            ),
-          ),
+          const Profimg(),
           const SizedBox(
             height: 15,
           ),
