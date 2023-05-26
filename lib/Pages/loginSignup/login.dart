@@ -119,8 +119,8 @@ class _LoginState extends State<Login> {
                 height: 15,
               ),
               // Continue divider
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Expanded(
                     child: Divider(
                       thickness: 1,
@@ -158,12 +158,9 @@ class _LoginState extends State<Login> {
                       "Don't have an account?",
                       style: TextStyle(color: txtColor, fontFamily: small),
                     ),
-                    const SizedBox(
-                      width: 10,
-                    ),
                     TextButton(
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
                             builder: (context) => const SignUp()));
                       },
                       child: const Text(

@@ -12,9 +12,13 @@ It is used to show and recommend the latest movies and shows for the user using 
 
 ## Changelog
 
+### Version 0.1.0
+- fixed some minor UI issues
+- handled some page transitions
+
 ### Version 0.0.4
 - Signup and Login page added
-- Popup dialoge added
+- Popup dialogue added
 
 ### Version 0.0.3
 - Profile page added

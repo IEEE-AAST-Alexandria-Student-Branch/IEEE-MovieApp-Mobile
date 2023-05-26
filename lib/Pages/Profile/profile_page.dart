@@ -37,7 +37,7 @@ class _ProfileState extends State<Profile> {
               const Text(
                 "Profile",
                 style:
-                    TextStyle(color: txtColor, fontFamily: small, fontSize: 20),
+                    TextStyle(color: txtColor, fontFamily: medium, fontSize: 23),
               ),
             ],
           ),
@@ -71,6 +71,7 @@ class _ProfileState extends State<Profile> {
           SizedBox(
             height: screenHigh / 2,
             child: ListView.builder(
+                padding: EdgeInsets.zero,
                 itemCount: dataIcons.length,
                 scrollDirection: Axis.vertical,
                 itemBuilder: (context, index) {

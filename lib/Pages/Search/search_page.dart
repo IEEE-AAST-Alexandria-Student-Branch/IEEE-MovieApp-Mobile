@@ -36,7 +36,7 @@ class _SearchState extends State<Search> {
                           style: ElevatedButton.styleFrom(
                               padding: const EdgeInsets.all(0),
                               elevation: 0,
-                              backgroundColor: higlightedFieldColor,
+                              backgroundColor: highLightedFieldColor,
                               shape: const RoundedRectangleBorder(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(15)),

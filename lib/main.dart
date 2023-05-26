@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ieee_movieapp/Pages/Intro/on_board_page.dart';
-import 'package:ieee_movieapp/Pages/Profile/fill.dart';
 import 'Constants/colors.dart';
 import 'Constants/themes.dart';
-import 'Pages/Profile/ProfileWidgets/dropdown.dart';
+import 'Pages/Intrests/interests_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,11 +17,12 @@ class MyApp extends StatelessWidget {
       title: 'IEEE MovieApp',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+          canvasColor: fieldColor,
           expansionTileTheme: expantionTileTheme,
           chipTheme: chipButtonTheme,
           scaffoldBackgroundColor: primaryColor,
           inputDecorationTheme: textFieldTheme),
-      home: const Fillprof(),
+      home: const Interests(),
     );
   }
 }

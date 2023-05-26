@@ -19,7 +19,7 @@ var textFieldTheme = InputDecorationTheme(
     // Switches the fill color based on focus
     fillColor: MaterialStateColor.resolveWith((states) =>
         states.contains(MaterialState.focused)
-            ? higlightedFieldColor
+            ? highLightedFieldColor
             : fieldColor),
     focusColor: secondaryColor,
     // Enabled (unselected), and focused border colors and shapes
@@ -30,7 +30,8 @@ var textFieldTheme = InputDecorationTheme(
     focusedBorder: OutlineInputBorder(
       borderSide: const BorderSide(width: 3, color: secondaryColor),
       borderRadius: BorderRadius.circular(15),
-    ));
+    )
+);
 
 var chipButtonTheme = const ChipThemeData(
   side: BorderSide(width: 2, color: secondaryColor),
@@ -46,4 +47,5 @@ var expantionTileTheme = const ExpansionTileThemeData(
     backgroundColor: fieldColor,
     textColor: txtColor,
     collapsedIconColor: secondaryColor,
-    iconColor: secondaryColor);
+    iconColor: secondaryColor
+);
