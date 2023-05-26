@@ -13,9 +13,7 @@ List<String> questionCatagoryList = [
 List<String> questionList = [
   "What is Mova?",
   "How to remove wishlist?",
-  "How do i subscribe to premium?",
   "How can i download movies?",
-  "How to unsubscribe from premium"
 ];
 
 List<bool> isOpen = [false, false, false];
