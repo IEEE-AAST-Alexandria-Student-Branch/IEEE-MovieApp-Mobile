@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'Constants/colors.dart';
 import 'Constants/themes.dart';
-import 'Pages/Intro/page 1.dart';
+import 'Pages/Intrests/interests_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,9 +17,12 @@ class MyApp extends StatelessWidget {
       title: 'IEEE MovieApp',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+          canvasColor: fieldColor,
+          expansionTileTheme: expantionTileTheme,
+          chipTheme: chipButtonTheme,
           scaffoldBackgroundColor: primaryColor,
           inputDecorationTheme: textFieldTheme),
-      home: const Intro1(),
+      home: const Interests(),
     );
   }
 }
