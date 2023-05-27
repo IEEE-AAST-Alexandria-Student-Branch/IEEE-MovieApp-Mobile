@@ -45,7 +45,7 @@ class _LoginState extends State<Login> {
               // Image and text at the top
               Column(
                 children: [
-                  Container(
+                  SizedBox(
                     //TODO: make size dynamic
                     height: 120,
                     width: 120,
@@ -119,8 +119,8 @@ class _LoginState extends State<Login> {
                 height: 15,
               ),
               // Continue divider
-              const Row(
-                children: [
+              Row(
+                children: const [
                   Expanded(
                     child: Divider(
                       thickness: 1,

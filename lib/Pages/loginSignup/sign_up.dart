@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:ieee_movieapp/Constants/colors.dart';
 import 'package:ieee_movieapp/Constants/fonts.dart';
@@ -46,7 +45,7 @@ class _SignUpState extends State<SignUp> {
               // Image and text at the top
               Column(
                 children: [
-                  Container(
+                  SizedBox(
                     //TODO: make size dynamic
                     height: 120,
                     width: 120,
@@ -109,8 +108,8 @@ class _SignUpState extends State<SignUp> {
                 height: 35,
               ),
               // Continue divider
-              const Row(
-                children: [
+              Row(
+                children: const [
                   Expanded(
                     child: Divider(
                       thickness: 1,

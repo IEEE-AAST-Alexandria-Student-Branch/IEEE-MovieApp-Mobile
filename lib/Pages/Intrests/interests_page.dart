@@ -21,9 +21,9 @@ class _InterestsState extends State<Interests> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [
+              children: const [
                 BackButton(
                   color: txtColor,
                 ),

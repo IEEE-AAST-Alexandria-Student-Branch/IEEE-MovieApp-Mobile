@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ieee_movieapp/Pages/Intro/on_board_page.dart';
+import 'package:ieee_movieapp/Pages/loginSignup/login.dart';
 import 'Constants/colors.dart';
 import 'Constants/themes.dart';
-import 'Pages/Intrests/interests_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           chipTheme: chipButtonTheme,
           scaffoldBackgroundColor: primaryColor,
           inputDecorationTheme: textFieldTheme),
-      home: const Interests(),
+      home: const Login(),
     );
   }
 }
