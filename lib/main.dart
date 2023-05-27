@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'Constants/colors.dart';
 import 'Constants/themes.dart';
+import 'Pages/Home/home_page.dart';
 import 'Pages/Intrests/interests_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -23,6 +25,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: primaryColor,
           inputDecorationTheme: textFieldTheme),
       home: const Interests(),
+
     );
   }
 }
