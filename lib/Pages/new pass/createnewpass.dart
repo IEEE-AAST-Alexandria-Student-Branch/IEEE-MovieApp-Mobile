@@ -67,25 +67,27 @@ class _Cnewpass extends State<Newpass> {
           const Nwpass(),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Checkbox(
-                value: rememberMe,
-                onChanged: _onRememberMeChanged,
-                activeColor: secondaryColor,
-                shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(6))),
-                side: const BorderSide(width: 2, color: secondaryColor),
+            children:[
+              Row( crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Checkbox(
+                    value: rememberMe,
+                    onChanged: _onRememberMeChanged,
+                    activeColor: secondaryColor,
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(6))),
+                    side: const BorderSide(width: 2, color: secondaryColor),
+                  ),              const Text("Remember me",
+                    style: TextStyle(fontFamily: small, color: txtColor),
+                  ),
+                ],
               ),
-              const Text(
-                "Remember me",
-                style: TextStyle(fontFamily: small, color: txtColor),
-              ),
+
               SizedBox(
                 width: 20,
                 height:50,
               ),
  /////////continue button
-
               const Contbutton()
             ],
 
