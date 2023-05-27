@@ -62,6 +62,7 @@ class _HelpState extends State<Help> with TickerProviderStateMixin {
                 indicatorSize: TabBarIndicatorSize.tab,
                 controller: _tabController,
                 tabs: const [
+                  ////////Frequently asked questions and contact us bar
                   Tab(
                       child: Text(
                     'FAQ',
@@ -88,6 +89,7 @@ class _HelpState extends State<Help> with TickerProviderStateMixin {
               child: TabBarView(
                 controller: _tabController,
                 children: const [
+                  ////////using faq_widget and contact_us_widget
                   FAQ(),
                   ContactUs(),
                 ],

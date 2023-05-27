@@ -52,6 +52,7 @@ class _InterestsState extends State<Interests> {
                           interestsList[i].name,
                         ),
                         labelStyle: TextStyle(
+                          ////using list from interests_data
                             color: (interestsList[i].isInterested
                                 ? txtColor
                                 : secondaryColor),
@@ -69,6 +70,7 @@ class _InterestsState extends State<Interests> {
                 ],
               ),
             ),
+            ////////////continue skip buttons
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 20),
               child: SkipContButtons(),

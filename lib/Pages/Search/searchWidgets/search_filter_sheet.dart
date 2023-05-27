@@ -294,8 +294,8 @@ class _SearchFilterState extends State<SearchFilter> {
                         shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(25)),
                         )),
-                    onPressed: () {},
-                    child: const Text("Contiune",
+                    onPressed: () => Navigator.pop(context),
+                    child: const Text("Continue",
                         style: TextStyle(fontFamily: medium))),
               ),
             ],

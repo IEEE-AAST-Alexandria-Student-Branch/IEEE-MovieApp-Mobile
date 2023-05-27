@@ -29,6 +29,7 @@ class _ContactUsState extends State<ContactUs> {
                       width: 20,
                     ),
                     Text(
+                      //////used list from help_data.dart
                       contactList[index],
                       style: const TextStyle(
                         color: txtColor,

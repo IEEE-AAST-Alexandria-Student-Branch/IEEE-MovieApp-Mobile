@@ -19,7 +19,10 @@ class Profimg extends StatelessWidget {
             ),
           ),
           Container(
-            decoration: const BoxDecoration(color: secondaryColor),
+            decoration: BoxDecoration(
+              color: secondaryColor,
+              borderRadius: BorderRadius.circular(3),
+            ),
             child: const Icon(Icons.edit),
           ),
         ],

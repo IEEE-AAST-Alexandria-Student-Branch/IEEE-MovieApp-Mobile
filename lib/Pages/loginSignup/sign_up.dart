@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:ieee_movieapp/Constants/colors.dart';
 import 'package:ieee_movieapp/Constants/fonts.dart';
@@ -8,7 +7,7 @@ import 'package:ieee_movieapp/Pages/loginSignup/dialogue.dart';
 import 'package:ieee_movieapp/Pages/loginSignup/login.dart';
 
 bool rememberMe = false;
-
+/////a page to create your account/sign up
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
 
@@ -46,10 +45,11 @@ class _SignUpState extends State<SignUp> {
               // Image and text at the top
               Column(
                 children: [
-                  Container(
+                  SizedBox(
                     //TODO: make size dynamic
                     height: 120,
                     width: 120,
+                    /////logo
                     child: Image.asset("images/red_ieee.png"),
                   ),
                   const Padding(
@@ -70,6 +70,7 @@ class _SignUpState extends State<SignUp> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  //////remember me and checkbox
                   Checkbox(
                     value: rememberMe,
                     onChanged: _onRememberMeChanged,
@@ -117,6 +118,7 @@ class _SignUpState extends State<SignUp> {
                       color: borderColor,
                     ),
                   ),
+                  ///////continue with bar
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 10),
                     child: Text(
@@ -148,12 +150,9 @@ class _SignUpState extends State<SignUp> {
                       "Already have an account?",
                       style: TextStyle(color: txtColor, fontFamily: small),
                     ),
-                    const SizedBox(
-                      width: 10,
-                    ),
                     TextButton(
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
                             builder: (context) => const Login()));
                       },
                       child: const Text(

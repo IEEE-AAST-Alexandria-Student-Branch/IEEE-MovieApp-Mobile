@@ -79,6 +79,7 @@ class _FAQState extends State<FAQ> {
                 width: 10,
               ),
               const Expanded(
+                /////////search bar
                 child: TextField(
                   showCursor: true,
                   cursorColor: secondaryColor,
@@ -110,6 +111,7 @@ class _FAQState extends State<FAQ> {
         ),
         // Expantion tile blocks builder
         Expanded(
+          /////////using previously assigned lists from help_data
           child: ListView.separated(
               itemCount: questionList.length,
               itemBuilder: (context, index) {

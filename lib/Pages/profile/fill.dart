@@ -55,12 +55,14 @@ class Fillprof extends StatelessWidget {
                 cursorColor: secondaryColor,
                 style: TextStyle(color: txtColor),
                 decoration: InputDecoration(
-                    hintText: "Email", suffixIcon: Icon(Icons.email)),
+                    hintText: "Email", suffixIcon: Icon(Icons.email_outlined)),
               ),
               const SizedBox(
                 height: 10,
               ),
               InternationalPhoneNumberInput(
+                initialValue: PhoneNumber(isoCode: "EG"),
+                autoValidateMode: AutovalidateMode.onUserInteraction,
                 selectorTextStyle:
                     const TextStyle(color: txtColor, fontFamily: medium),
                 selectorConfig: const SelectorConfig(
@@ -68,8 +70,9 @@ class Fillprof extends StatelessWidget {
                 textStyle: const TextStyle(color: txtColor, fontFamily: medium),
                 spaceBetweenSelectorAndTextField: 0,
                 onInputChanged: (value) {},
-                inputBorder: const OutlineInputBorder(
-                  borderSide: BorderSide(
+                inputBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(15),
+                  borderSide: const BorderSide(
                     color: secondaryColor,
                   ),
                 ),

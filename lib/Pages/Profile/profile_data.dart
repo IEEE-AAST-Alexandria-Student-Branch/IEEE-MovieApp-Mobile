@@ -17,12 +17,12 @@ List<String> dataText = [
 
 List<Widget> dataIcons = [
   const Icon(
-    Icons.person_outline,
+    Icons.person_outline_rounded,
     color: Colors.grey,
     size: 40,
   ),
   const Icon(
-    Icons.notifications_none,
+    Icons.notifications_none_rounded,
     color: Colors.grey,
     size: 40,
   ),
@@ -32,7 +32,7 @@ List<Widget> dataIcons = [
     size: 40,
   ),
   const Icon(
-    Icons.shield,
+    Icons.shield_outlined,
     color: Colors.grey,
     size: 40,
   ),

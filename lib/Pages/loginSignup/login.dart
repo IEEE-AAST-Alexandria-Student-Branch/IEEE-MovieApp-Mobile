@@ -7,7 +7,7 @@ import 'package:ieee_movieapp/Pages/loginSignup/dialogue.dart';
 import 'package:ieee_movieapp/Pages/loginSignup/sign_up.dart';
 
 bool rememberMe = false;
-
+////this is the login page
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -45,10 +45,11 @@ class _LoginState extends State<Login> {
               // Image and text at the top
               Column(
                 children: [
-                  Container(
+                  SizedBox(
                     //TODO: make size dynamic
                     height: 120,
                     width: 120,
+                    ///////logo
                     child: Image.asset("images/red_ieee.png"),
                   ),
                   const Padding(
@@ -64,6 +65,7 @@ class _LoginState extends State<Login> {
                 ],
               ),
               // Data entry fields
+              //email and password
               const EmailPass(),
               // Remeber me checkbox
               Row(
@@ -158,12 +160,9 @@ class _LoginState extends State<Login> {
                       "Don't have an account?",
                       style: TextStyle(color: txtColor, fontFamily: small),
                     ),
-                    const SizedBox(
-                      width: 10,
-                    ),
                     TextButton(
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
                             builder: (context) => const SignUp()));
                       },
                       child: const Text(

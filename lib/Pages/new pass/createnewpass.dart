@@ -68,8 +68,9 @@ class _Cnewpass extends State<Newpass> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children:[
-              Row( crossAxisAlignment: CrossAxisAlignment.center,
+              Row( mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  /////remember me box with check box
                   Checkbox(
                     value: rememberMe,
                     onChanged: _onRememberMeChanged,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ieee_movieapp/Constants/colors.dart';
 import 'package:ieee_movieapp/Constants/fonts.dart';
-import 'package:ieee_movieapp/Pages/Intrests/interests_page.dart';
 import 'package:ieee_movieapp/Pages/Intro/IntroWidgets/cont_buttons.dart';
 import 'package:ieee_movieapp/Pages/loginSignup/login.dart';
 
